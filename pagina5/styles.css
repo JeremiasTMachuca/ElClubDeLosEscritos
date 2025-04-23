@@ -2,7 +2,8 @@ body {
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fondo.jpg');
     background-size: cover;
-    font-family: Poetsen One;
+    background-position: center;
+    font-family: 'Poetsen One', sans-serif;
 }
 
 * {
@@ -12,81 +13,81 @@ body {
 .main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .zeus {
-    width: 92%;
+    width: 100%;
 }
 
 .text_container {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     background-color: #f8e2b5;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    width: 750px;
-    height: 620px;
+    width: 90%;
+    max-width: 700px;
+    height: 450px;
 }
 
 .fieldset {
     background-color: #a3ab95;
     border: 2px solid #000;
-    border-radius:  10px;
-    width: 700px;
-    height: 600px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    padding: 10px;
 }
 
 .legend {
     text-align: center;
-    font-size: 40px;
+    font-size: 2em;
 }
 
 .textarea {
     resize: none;
     padding: 10px;
-    width: 700px;
-    min-height: 500px;
+    width: 100%;
+    min-height: 300px;
     background-color: transparent;
     border-radius: 10px;
     overflow: auto;
+    font-size: 1em;
 }
 
 .button {
     margin: 10px 0px;
+    padding: 10px;
+    font-size: 1em;
 }
 
-
-@media (max-width: 768px) {
+/* Estilos adaptativos para celulares */
+@media screen and (max-width: 768px) {
     .main {
         flex-direction: column;
         align-items: center;
     }
 
-    .zeus {
-        width: 100%;
+    .text_container {
+        width: 95%;
+        height: auto;
     }
 
-    .form {
-        width: 90%;
-        margin: 10px;
-        padding: 15px;
+    .fieldset {
+        width: 100%;
+        height: auto;
     }
 
     .legend {
-        font-size: 28px;
+        font-size: 1.5em;
     }
 
     .textarea {
-        width: 100%;
-        height: 250px;
-        font-size: 16px;
-    }
-
-    .button {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
+        min-height: 200px;
     }
 }
