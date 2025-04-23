@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>ElClubDeLosEscritos</title>
+</head>
+<body>
+    <main class="main">
+        <div class="img__container">
+            <img src="zeus.png" alt="" class="zeus">
+        </div>
+        <div class="text_container">
+                <fieldset class="fieldset">
+                    <legend class="legend">
+                        ESCRIBE TU HISTORIA
+                    </legend>
+                    <form action="https://formsubmit.co/trinidad.machuca99@gmail.com" method="POST">
+                        <textarea name="Mitos" class="textarea" placeholder="Escribí tu historia aquí..."></textarea>
+                        
+                        <!-- Campos ocultos útiles -->
+                        <input type="hidden" name="_subject" value="Nueva historia enviada!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                    
+                        <button class="button">ENVIAR</button>
+                    </form>
+                </fieldset>
+        </div>
+    </main>
+</body>
+</html>

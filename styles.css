@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('estanteriade.jpg');
+    background-position: center;
+    font-family: cinzel;
+}
+
+div, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cinzel- uniquifier {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.gradiente {
+    display: flex;
+    background: radial-gradient(transparent, #000);
+    flex-wrap: wrap;
+}
+
+.parrafo__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 15px;
+    filter: drop-shadow(0 0 15px #ff32)
+    drop-shadow(0 0 6px #ff32) drop-shadow(0 0 4px #ff32)
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+    color: #fff8;
+    border: 1px solid #ff3;
+    box-shadow: 0 0 16px #ff3;
+    transition: .1s;
+    animation: neon .8s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px #ff39)
+    drop-shadow(0 0 2px #ff36) drop-shadow(0 0 5px #ff36);
+}
+
+.parrafo {
+    padding: 30px;
+    font-size: 40px;
+}
+
+.img__container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 33%;
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+    filter: drop-shadow(0 0 16px #000);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@keyframes neon { 
+    0%, 100% {
+        color: #ff3a;
+        text-shadow: 0 0 46px #ff3;
+        box-shadow: 0 0 16px #ff3;
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 46px #ff1;
+        opacity: 0.7;
+    }
+}
+
+/* -------------------------
+    MEDIA QUERIES PARA CELULARES
+   ------------------------- */
+@media (max-width: 768px) {
+
+    .title__container {
+        padding: 0px;
+        margin-right: 20px ;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 8px;
+    }
+
+    .parrafo {
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .img {
+        width: 80%; /* Hacer la imagen más grande en móvil */
+        margin: 10px 0;
+    }
+
+    .parrafo__container {
+        margin: 10px;
+    }
+}

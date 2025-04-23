@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('estanteriade.jpg');
+    background-position: center;
+    font-family: cinzel;
+}
+
+div body h1 p ul li img {
+    box-sizing: border-box;
+}
+
+.parrafo__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.parrafo__2 {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+.sub__title {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    color: #fff;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.img {
+    border-radius: 20px;
+    width: 200%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.img__3 {
+    width: 215%;
+    height: auto;
+    z-index: -1;
+}
+
+.list__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: row; /* asegura que los li estén uno al lado del otro */
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 150px; /* espacio entre columnas */
+    flex-wrap: wrap; /* opcional si querés que bajen en pantallas pequeñas */
+}
+
+
+.list li {
+    display: flex;
+    flex-direction: column; /* para que el contenido dentro del li esté apilado */
+    align-items: center;
+    width: 250px;
+}
+
+a:hover {
+    filter: drop-shadow(0 0 16px #000);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* ESTILOS RESPONSIVE PARA CELULARES */
+@media screen and (max-width: 768px) {
+
+    .parrafo__2 {
+        font-size: 1.3rem;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parrafo {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .img,
+    .img__3 {
+        width: 90%;
+    }
+
+    .list {
+        flex-direction: column;
+        padding-left: 0;
+        gap: 100%;
+    }
+
+    .list__container {
+        padding: 0 10px;
+    }
+}
